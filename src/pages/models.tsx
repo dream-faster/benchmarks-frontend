@@ -2,7 +2,7 @@ import BreadcrumbSection from '@/components/BreadcrumbSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import Seperator from '@/components/Seperator';
 import { Meta } from '@/layouts/Meta';
-import { getSortedTopicsData } from '@/lib/topics';
+import { getSortedTopicsData } from '@/lib/models';
 import { Main } from '@/templates/Main';
 import OneSection from '@/templates/OneSection';
 
@@ -20,15 +20,15 @@ export default function Index({
         <Meta
           title="Topics >> Nowcasting Eval AI Studio"
           description="Independent R&D studio specialized in Artificial Intelligence and Nowcasting."
-          social_card_ending="topics"
+          social_card_ending="models"
         />
       }
     >
-      <OneSection title="topics 👇">
+      <OneSection title="models 👇">
         <div className="w-full px-12">
           <BreadcrumbSection />
         </div>
-        <ProjectsSection allPostsData={allPostsData} baseUrl="topics" all />
+        <ProjectsSection allPostsData={allPostsData} baseUrl="models" all />
       </OneSection>
       <Seperator />
     </Main>

@@ -53,6 +53,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/Breadcrumb.jsx",
-    "src/pages/index.jsx"
+    "src/pages/index.tsx"
   ]
 }

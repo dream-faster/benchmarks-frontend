@@ -70,9 +70,9 @@ export default function Index({ date, close }) {
       {/* <OneSection>
         <Hero />
       </OneSection>
-      <OneSection title="projects 👇">
-        <ProjectsSection allPostsData={allPostsData} baseUrl="projects" />
-        <MinorButton to="/projects" text="All Projects" />
+      <OneSection title="datasets 👇">
+        <ProjectsSection allPostsData={allPostsData} baseUrl="datasets" />
+        <MinorButton to="/datasets" text="All Projects" />
       </OneSection>
       <OneSection title="links 👇">
         <div className="flex flex-col flex-wrap items-start justify-start px-8 md:flex-row">
@@ -89,9 +89,9 @@ export default function Index({ date, close }) {
           />
         </div>
       </OneSection>
-      <OneSection title="topics 👇">
-        <ProjectsSection allPostsData={allTopicsData} baseUrl="topics" all />
-        <MinorButton to="/topics" text="All Topics" />
+      <OneSection title="models 👇">
+        <ProjectsSection allPostsData={allTopicsData} baseUrl="models" all />
+        <MinorButton to="/models" text="All Topics" />
       </OneSection>
       <Seperator /> */}
     </Main>
@@ -123,7 +123,7 @@ export async function getStaticProps() {
   //   'https://raw.githubusercontent.com/dream-faster/benchmarking-test/master/results/bitcoin.csv'
   // );
   const bitcoinData = await fetchCsv();
-  console.log(bitcoinData);
+
   // raw.githubusercontent.com/Unsigned-Research/enoki-research/main/results.csv?token=GHSAT0AAAAAAB65Q4QLH63AHK64XZSFPI2CY77HANA
 
   // const allTopicsData = allPostsData;

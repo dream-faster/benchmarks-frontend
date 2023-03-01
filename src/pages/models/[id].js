@@ -1,11 +1,8 @@
-import { getAllTopicIds, getTopicData } from '@/lib/topics';
-
-import { getSortedPostsData } from '@/lib/projects';
+import { getSortedPostsData } from '@/lib/datasets';
 
 import { Meta } from '@/layouts/Meta.tsx';
 import { Main } from '@/templates/Main.tsx';
-
-import { ProjectPage } from '@/components/ProjectPage.tsx';
+import { getAllTopicIds, getTopicData } from '@/lib/models';
 
 export default function Post({ topicData, filteredProjects }) {
   return (
@@ -15,15 +12,15 @@ export default function Post({ topicData, filteredProjects }) {
         <Meta
           title={`Project: ${topicData.title} - Nowcasting Eval | ML Research`}
           description={topicData.description}
-          social_card_ending="topics"
+          social_card_ending="models"
         />
       }
     >
-      <ProjectPage
+      {/* <ProjectPage
         data={topicData}
         relatedData={filteredProjects}
-        relatedType="projects"
-      />
+        relatedType="datasets"
+      /> */}
     </Main>
   );
 }

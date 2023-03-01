@@ -29,7 +29,7 @@ const About = () => (
           Europe and the Americas.
           <br />
           <br />
-          Some of the topics we are interested in:
+          Some of the models we are interested in:
           <br />
           - Forecasting Non-stationary Time Series
           <br />
@@ -44,7 +44,7 @@ const About = () => (
           <h2 id="community"> Community </h2>
           Since 2021 we have been developing a community of likeminded
           individuals, who we meet weekly for: Project Demonstrations and Deep
-          Dives Mini-lectures on computational topics, eg.: Caustics Paper
+          Dives Mini-lectures on computational models, eg.: Caustics Paper
           Reviews on new, exciting papers. If you would like to apply to the
           community then DM us on @hellosemy or @itchingpixels to join the
           family.
@@ -55,7 +55,7 @@ const About = () => (
           <br />
           Become part of the journey in experimenting with a new way of
           organising technological spin-offs. We write deep insights into what
-          went well and wrong in our projects, and show the state of affairs in
+          went well and wrong in our datasets, and show the state of affairs in
           those segments.
           <br />
         </p>

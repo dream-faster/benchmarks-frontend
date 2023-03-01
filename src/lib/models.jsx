@@ -4,7 +4,7 @@ import path from 'path';
 import { remark } from 'remark';
 import html from 'remark-html';
 
-const postsDirectory = path.join(process.cwd(), 'src/topics');
+const postsDirectory = path.join(process.cwd(), 'src/models');
 
 export function getSortedTopicsData() {
   // Get file names under /posts

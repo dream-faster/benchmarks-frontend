@@ -37,6 +37,10 @@ export default function Index({
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+
+  const res = await fetch('https://.../posts')
+  const posts = await res.json()
+  
   return {
     props: {
       allPostsData,

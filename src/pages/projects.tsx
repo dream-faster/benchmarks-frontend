@@ -1,5 +1,4 @@
 import BreadcrumbSection from '@/components/BreadcrumbSection';
-import ProjectsSection from '@/components/ProjectsSection';
 import Seperator from '@/components/Seperator';
 import { Meta } from '@/layouts/Meta';
 import { getSortedPostsData } from '@/lib/projects';
@@ -28,7 +27,8 @@ export default function Index({
         <div className="w-full px-12">
           <BreadcrumbSection />
         </div>
-        <ProjectsSection allPostsData={allPostsData} baseUrl="projects" all />
+        <h1>{allPostsData}</h1>
+        {/* <ProjectsSection allPostsData={allPostsData} baseUrl="projects" all /> */}
       </OneSection>
       <Seperator />
     </Main>
@@ -38,9 +38,13 @@ export default function Index({
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
 
-  const res = await fetch('https://.../posts')
-  const posts = await res.json()
-  
+  const res = await fetch(
+    'https://raw.githubusercontent.com/dream-faster/benchmarking-test/master/results/model.csv'
+  );
+  const allPostsData = await res.json();
+
+  // console.log(allPostsData);
+
   return {
     props: {
       allPostsData,

@@ -12,7 +12,7 @@ const About = () => (
     wide={true}
     meta={
       <Meta
-        title="About us - Dream Faster | ML Research"
+        title="About us - Nowcasting Eval | ML Research"
         description="About us"
         social_card_ending="aboutus"
       />
@@ -22,8 +22,8 @@ const About = () => (
       <article className="prose prose-zinc w-full dark:prose-invert ">
         <h2> Studio </h2>
         <p>
-          We are Dream Faster, a Machine Learning Research Studio specialized in
-          Nowcasting (high frequency, short term forecasting) of Complex
+          We are Nowcasting Eval, a Machine Learning Research Studio specialized
+          in Nowcasting (high frequency, short term forecasting) of Complex
           Dynamical Systems (Finance, Energy). Based in Berlin, we currently
           collaborate with Machine Learning Practicioners and Researchers across
           Europe and the Americas.

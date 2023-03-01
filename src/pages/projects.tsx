@@ -17,7 +17,7 @@ export default function Index({
       wide={true}
       meta={
         <Meta
-          title="Projects >> Dream Faster AI Studio"
+          title="Projects >> Nowcasting Eval AI Studio"
           description="Independent R&D studio specialized in Artificial Intelligence and Nowcasting."
           social_card_ending="projects"
         />

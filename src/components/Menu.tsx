@@ -1,5 +1,3 @@
-import { MajorButton } from '@/components/MajorButton';
-
 import { DarkModeButton } from './DarkModeButton';
 import { Logo } from './Logo';
 
@@ -14,11 +12,11 @@ const Menu = ({ wide }: { wide: boolean }) => (
 
     {/* <div className="col-span-1" /> */}
     <div className="col-span-4 mt-2  hidden w-full flex-row justify-between self-start justify-self-start px-0 font-mono text-sm md:m-0 md:mr-2 md:flex md:h-full md:items-center md:justify-end md:justify-self-end">
-      <MajorButton
+      {/* <MajorButton
         text="Collaborate with us"
         link="/collaborate"
         primary={false}
-      />
+      /> */}
     </div>
     <div className="hidden h-full w-full items-center justify-center md:flex">
       <DarkModeButton />

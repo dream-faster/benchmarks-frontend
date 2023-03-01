@@ -29,7 +29,7 @@ const getPosts = (allPostsData, baseUrl) => (
 const standardOptions =
   '%0D%0D%0D%0D(optional) Deadline:%0D%0D(optional) Budget/Investment (with currency):%0D%0D(optional) Website:%0D%0D(optional) Alternate contact:';
 
-const welcome = 'Hi Dream Faster Studio,%0D%0D ';
+const welcome = 'Hi Nowcasting Eval Studio,%0D%0D ';
 const goodbye = 'Best Regards,%0D%0D ';
 
 const projectDescription = '%0D%0D⎯⎯⎯%0D%0D%0D%0D%0D⎯⎯⎯%0D%0D%0D';
@@ -79,7 +79,7 @@ const Collaborate = ({
     wide={true}
     meta={
       <Meta
-        title="Collaborate - Dream Faster | ML Research"
+        title="Collaborate - Nowcasting Eval | ML Research"
         description="Collaborate with us"
         social_card_ending="collaborate"
       />

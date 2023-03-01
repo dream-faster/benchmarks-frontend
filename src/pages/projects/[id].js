@@ -11,7 +11,7 @@ export default function Post({ postData, filteredTopics }) {
       wide={true}
       meta={
         <Meta
-          title={`Project: ${postData.title} - Dream Faster | ML Research`}
+          title={`Project: ${postData.title} - Nowcasting Eval | ML Research`}
           description={postData.description}
           social_card_ending="projects"
         />

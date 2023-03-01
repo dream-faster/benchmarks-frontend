@@ -1,4 +1,5 @@
 // import Plot from 'react-plotly.js';
+import { DataFrame, fromCSV, readFile, Series } from 'data-forge';
 import dynamic from 'next/dynamic';
 
 import { Meta } from '@/layouts/Meta';
@@ -8,8 +9,8 @@ import OneSection from '@/templates/OneSection';
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false });
 
 export default function Index({
-  allPostsData,
-  allTopicsData,
+  resultsData,
+  df,
 }: {
   allPostsData: [string, string, string, string];
   allTopicsData: [string, string, string, string];
@@ -21,8 +22,8 @@ export default function Index({
       wide={true}
       meta={
         <Meta
-          title="Dream Faster AI Studio"
-          description="Independent R&D studio specialized in Artificial Intelligence."
+          title="Nowcasting Benchmarks"
+          description="Continously Validated models on public Time Series Datasets."
           social_card_ending="landing"
         />
       }
@@ -31,7 +32,7 @@ export default function Index({
         <Plot
           data={[
             {
-              x: [1, 2, 3],
+              x: df.getSeries('Close').toArray(),
               y: [allPostsData * 2, allPostsData * 3, allPostsData * 4],
               type: 'scatter',
               mode: 'lines+markers',
@@ -39,7 +40,7 @@ export default function Index({
             },
             { type: 'bar', x: [1, 2, 3], y: [2, 5, 3] },
           ]}
-          layout={{ width: 320, height: 240, title: 'A Fancy Plot' }}
+          layout={{ title: 'A Fancy Plot' }}
         />
       </OneSection>
 
@@ -81,13 +82,21 @@ export async function getStaticProps() {
   const res = await fetch(
     'https://raw.githubusercontent.com/dream-faster/benchmarking-test/master/results/model.csv'
   );
-  const allPostsData = await res.json();
-  const allTopicsData = allPostsData;
+  const resultsData = await res.json();
+  const bitcoin = await fetch(
+    'https://raw.githubusercontent.com/dream-faster/benchmarking-test/master/results/bitcoin.csv'
+  );
+  const bitcoinData = await bitcoin.json();
+
+  // raw.githubusercontent.com/Unsigned-Research/enoki-research/main/results.csv?token=GHSAT0AAAAAAB65Q4QLH63AHK64XZSFPI2CY77HANA
+
+  // const allTopicsData = allPostsData;
+  const df = fromCSV(bitcoinData);
 
   return {
     props: {
-      allPostsData,
-      allTopicsData,
+      resultsData,
+      df,
     },
   };
 }

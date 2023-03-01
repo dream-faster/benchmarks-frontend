@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Dream Faster Studio',
-  title: 'Dream Faster',
+  site_name: 'Nowcasting Eval Studio',
+  title: 'Nowcasting Eval',
   description: 'Independent R&D studio specialized in Artificial Intelligence',
   locale: 'en',
 };

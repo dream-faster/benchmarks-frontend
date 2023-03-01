@@ -52,6 +52,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/Breadcrumb.jsx"
+    "src/components/Breadcrumb.jsx",
+    "src/pages/index.jsx"
   ]
 }

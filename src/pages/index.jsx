@@ -1,6 +1,5 @@
 // import Plot from 'react-plotly.js';
 import { DataFrame, fromCSV, Series } from 'data-forge';
-import { close } from 'fs';
 import dynamic from 'next/dynamic';
 
 import { Meta } from '@/layouts/Meta';
@@ -38,13 +37,7 @@ const Table = (props) => {
   );
 };
 
-export default function Index({
-  date,
-  close,
-}: {
-  allPostsData: [string, string, string, string];
-  allTopicsData: [string, string, string, string];
-}): JSX.Element {
+export default function Index({ date, close }) {
   // const router = useRouter();
 
   return (

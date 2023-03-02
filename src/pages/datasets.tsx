@@ -1,5 +1,3 @@
-import BreadcrumbSection from '@/components/BreadcrumbSection';
-import Seperator from '@/components/Seperator';
 import { Meta } from '@/layouts/Meta';
 import { getSortedPostsData } from '@/lib/datasets';
 import { Main } from '@/templates/Main';
@@ -23,20 +21,16 @@ export default function Index({
         />
       }
     >
-      <OneSection title="datasets 👇">
-        <div className="w-full px-12">
-          <BreadcrumbSection />
-        </div>
+      <OneSection>
         <h1>{allPostsData}</h1>
         {/* <ProjectsSection allPostsData={allPostsData} baseUrl="datasets" all /> */}
       </OneSection>
-      <Seperator />
     </Main>
   );
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  // const allPostsData = getSortedPostsData();
 
   const res = await fetch(
     'https://raw.githubusercontent.com/dream-faster/benchmarking-test/master/results/model.csv'

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Router } from 'next/router';
 import Script from 'next/script';
 import type { ReactNode } from 'react';
@@ -59,13 +60,13 @@ const Nav = () => (
     <div className="flex-none">
       <ul className="menu menu-horizontal px-1">
         <li>
-          <a>Datasets</a>
+          <Link href={'/datasets'}>Datasets</Link>
         </li>
         <li>
-          <a>Models</a>
+          <Link href={'/models'}>Models</Link>
         </li>
         <li>
-          <a>Ranking</a>
+          <Link href={'/ranking'}>Ranking</Link>
         </li>
       </ul>
     </div>

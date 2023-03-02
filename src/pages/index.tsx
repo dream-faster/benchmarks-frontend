@@ -66,34 +66,6 @@ export default function Index({ date, close }) {
         />
         <Table />
       </OneSection>
-
-      {/* <OneSection>
-        <Hero />
-      </OneSection>
-      <OneSection title="datasets 👇">
-        <ProjectsSection allPostsData={allPostsData} baseUrl="datasets" />
-        <MinorButton to="/datasets" text="All Projects" />
-      </OneSection>
-      <OneSection title="links 👇">
-        <div className="flex flex-col flex-wrap items-start justify-start px-8 md:flex-row">
-          <MajorButton
-            text="GitHub Organisation"
-            link="https://github.com/dream-faster"
-            external
-          />
-          <MajorButton
-            text="Applied Exploration Blog"
-            link="https://www.appliedexploration.com/"
-            external
-            primary
-          />
-        </div>
-      </OneSection>
-      <OneSection title="models 👇">
-        <ProjectsSection allPostsData={allTopicsData} baseUrl="models" all />
-        <MinorButton to="/models" text="All Topics" />
-      </OneSection>
-      <Seperator /> */}
     </Main>
   );
 }

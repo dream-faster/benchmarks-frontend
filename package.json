@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.7",
+    "@types/plotly.js-basic-dist": "^1.54.1",
     "daisyui": "^2.51.3",
     "data-forge": "^1.9.6",
     "gray-matter": "^4.0.3",

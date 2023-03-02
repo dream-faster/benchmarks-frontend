@@ -1,8 +1,3 @@
-import { MajorButton } from '@/components/MajorButton';
-import {
-  CommunityCardSection,
-  ProfileCardSection,
-} from '@/components/ProfileCardSection';
 import { Meta } from '@/layouts/Meta';
 import { Article } from '@/templates/Article';
 import { Main } from '@/templates/Main';
@@ -19,7 +14,7 @@ const About = () => (
     }
   >
     <Article>
-      <article className="prose prose-zinc w-full dark:prose-invert ">
+      <article className="prose-zinc prose w-full dark:prose-invert ">
         <h2> Studio </h2>
         <p>
           We are Nowcasting Eval, a Machine Learning Research Studio specialized
@@ -37,9 +32,6 @@ const About = () => (
           <br />
           - Neuro-symbolic approaches, eg. symbolic regression.
           <br />
-          <div className="mt-6 flex  w-full flex-col flex-wrap md:flex-row">
-            <ProfileCardSection large />
-          </div>
           <br />
           <h2 id="community"> Community </h2>
           Since 2021 we have been developing a community of likeminded
@@ -49,9 +41,6 @@ const About = () => (
           community then DM us on @hellosemy or @itchingpixels to join the
           family.
           <br />
-          <div className="mt-6 flex  w-full flex-col flex-wrap md:flex-row">
-            <CommunityCardSection large />
-          </div>
           <br />
           Become part of the journey in experimenting with a new way of
           organising technological spin-offs. We write deep insights into what
@@ -60,11 +49,6 @@ const About = () => (
           <br />
         </p>
         Subscribe here:
-        <MajorButton
-          text="Applied Exploration Blog"
-          link="https://appliedexploration.substack.com/"
-          external
-        />
       </article>
     </Article>
   </Main>

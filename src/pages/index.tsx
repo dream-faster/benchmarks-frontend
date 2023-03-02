@@ -2,21 +2,10 @@
 import { DataFrame, fromCSV, Series } from 'data-forge';
 import dynamic from 'next/dynamic';
 
+import { Card } from '@/components/card';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 import OneSection from '@/templates/OneSection';
-
-const Card = (props) => (
-  <div className="card w-96 bg-base-100 shadow-xl">
-    <div className="card-body">
-      <h2 className="card-title">Card title!</h2>
-      <p>{props.children}</p>
-      <div className="card-actions justify-end">
-        <button className="btn-primary btn">Buy Now</button>
-      </div>
-    </div>
-  </div>
-);
 
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false });
 const Table = (props) => {
@@ -64,20 +53,6 @@ export default function Index({ date, close }) {
       }
     >
       <OneSection>
-        <Card>
-          <Plot
-            data={[
-              {
-                x: date,
-                y: close,
-                type: 'scatter',
-                mode: 'lines+markers',
-                marker: { color: 'red' },
-              },
-            ]}
-            layout={{ title: 'A Fancy Plot' }}
-          />
-        </Card>
         <Card>
           <Table />
         </Card>

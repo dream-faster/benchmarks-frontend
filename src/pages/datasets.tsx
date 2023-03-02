@@ -30,7 +30,7 @@ export default function Index({
     >
       <OneSection>
         {/* <h1>{allPostsData}</h1> */}
-        <Card>
+        {/* <Card> */}
           <Plot
             data={[
               {
@@ -41,9 +41,9 @@ export default function Index({
                 marker: { color: 'red' },
               },
             ]}
-            layout={{ title: 'A Fancy Plot' }}
+            layout={{ title: 'Bitcoin' }}
           />
-        </Card>
+        {/* </Card> */}
         {/* <ProjectsSection allPostsData={allPostsData} baseUrl="datasets" all /> */}
       </OneSection>
     </Main>

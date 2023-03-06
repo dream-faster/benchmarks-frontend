@@ -28,6 +28,7 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/apple-touch-icon.png`}
           key="apple"
         />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
         <link
           rel="icon"
           type="image/png"

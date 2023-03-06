@@ -1,6 +1,4 @@
-# Landing Page for Nowcasting Eval AI  - [Live site](https://fasterdream.com)
-
-Nowcasting Eval is an independent ML Research Studio, focusing on translating state of the art algorithms to practice.
+# Benchmarking tests
 
 ## Using this as a boilerplate
 
